@@ -174,3 +174,52 @@ input[type=radio]{
     display: block;
 }
 
+
+/* media query */
+
+@media (min-width: 480px){
+    .feedbackForm{
+        width: 75%;
+    }
+    .content > div {
+        padding: 25px 50px;
+    }
+}
+
+@media (min-width: 768px){
+    .feedbackForm{
+        width: 65%;
+    }
+    .tabs label{
+        display: inline-block;
+        align-self: center;
+    }
+    .tabs label i{
+        right: 0;
+    }
+
+    #spider-tab:checked ~ .content .firstPlant,
+    #snake-tab:checked ~ .content .secondPlant,
+    #philo-tab:checked ~ .content .thirdPlant {
+        display: flex;
+    }
+    .imgContainer,
+    .plantDescription{
+        width:50%;
+    }
+    .imgContainer{
+        margin-right: 25px;
+    }
+    .plantDescription p:first-child{
+        margin: 0;
+    }
+}
+
+@media (min-width: 940px){
+    .wrapper{
+        max-width: 1400px;
+    }
+    .feedbackForm{
+        width: 55%;
+    }
+}
