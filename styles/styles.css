@@ -119,3 +119,58 @@ input[type=checkbox]:checked + .toggleLabel::before,input[type=checkbox]:hover +
     background-color: #ED6B55;
 }
 
+.tabs{
+    background: #234535;
+}
+
+.content{
+    background-color: white;
+}
+
+.tabs label{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+
+.content > div {
+    display: none;
+    padding: 20px;
+}
+
+#spider-tab:checked ~ .content .firstPlant,
+#snake-tab:checked ~ .content .secondPlant,
+#philo-tab:checked ~ .content .thirdPlant {
+    display: block;
+}
+input[type=radio]{
+    display: none;
+}
+
+.tabs label:hover,
+.tabs label:focus{
+    cursor: pointer;
+    color: white;
+}
+
+.tabs input:checked + label{
+    color: white;
+}
+
+.tabs input:focus + label{
+    text-decoration: underline;
+}
+
+.tabs label i{
+    position: absolute;
+    color: #ED6B55;
+    right: 50px;
+    top: 20px;
+    display: none;
+}
+
+.tabs input:checked + label i {
+    display: block;
+}
+
